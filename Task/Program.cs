@@ -9,3 +9,18 @@ for (int i = 0; i < size; i++)
     string result = Console.ReadLine();
     array1[i] = result;
 }
+Console.WriteLine();
+Console.Write("Введенный массив: [");
+Console.Write(string.Join(",", array1));
+Console.Write("]");
+
+int count = 0;
+int maxChar = 3;
+
+for (int i = 0; i < array1.Length; i++)
+{
+    if (array1[i].Length <= maxChar)
+    {
+        count++;
+    }
+}
